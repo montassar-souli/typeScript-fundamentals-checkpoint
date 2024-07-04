@@ -2,7 +2,7 @@ interface Vehicle {
   make: string;
   model: string;
   year: number;
-  start(): void;
+  start(): void //{console.log("Engine started");} method in the interface doesn't contain an implementation
 }
 
 class Car implements Vehicle {
@@ -21,5 +21,5 @@ class Car implements Vehicle {
   }
 }
 
-let myCar = new Car("Toyota", "Corolla", 2020);
-myCar.start();
+let car = new Car("Ford", "Mustang", 2024);
+car.start();
